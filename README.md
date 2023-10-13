@@ -1,7 +1,7 @@
 # Projeto 1 - ALU
 
-**NOTE**<br>
-Este código foi testado apenas em um ambiente com um <em>ISE 14.7</em> em um Windows 10. Isso foi possível pois a instalação do programa se deu em uma **Máquina Virtual** utilizando o Oracle Virtual Box. Pesquise sobre como fazer isso no windows para que você possa usufuir da ferramenta neste sistema operacional.
+> [!NOTE]<br>
+> Este código foi testado apenas em um ambiente com um <em>ISE 14.7</em> em um Windows 10. Isso foi possível pois a instalação do programa se deu em uma **Máquina Virtual** utilizando o Oracle Virtual Box. Pesquise sobre como fazer isso no windows para que você possa usufuir da ferramenta neste sistema operacional.
 
 ## Sistemas Digitais - 2023/2 - EEL480 - UFRJ
 
