@@ -123,9 +123,9 @@ end component;
 begin
 
 	sum <= (not Control(2)) and (not Control(1)) and (not Control(0)); -- 000
-	sub <= (not Control(2)) and (not Control(1)) and     (Control(0)); -- 001
-	inc <= (not Control(2)) and (Control(1))     and (not Control(0)); -- 010
-	tro <= (not Control(2)) and (Control(1))     and     (Control(0)); -- 011
+	sub <= (not Control(2)) and (not Control(1)) and (    Control(0)); -- 001
+	inc <= (not Control(2)) and (    Control(1)) and (not Control(0)); -- 010
+	tro <= (not Control(2)) and (    Control(1)) and (    Control(0)); -- 011
 	dec <= (    Control(2)) and (not Control(1)) and (not Control(0)); -- 100
 
 	som_sub : somador_subtrator PORT MAP(X, Y, Control(0), sum_res, sum_co, sum_ov);
