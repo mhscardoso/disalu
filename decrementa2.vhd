@@ -2,9 +2,9 @@
 -- Company: 
 -- Engineer: 
 -- 
--- Create Date:    20:10:57 10/12/2023 
+-- Create Date:    23:14:23 10/30/2023 
 -- Design Name: 
--- Module Name:    decremento - Behavioral 
+-- Module Name:    decrem2 - Behavioral 
 -- Project Name: 
 -- Target Devices: 
 -- Tool versions: 
@@ -29,17 +29,17 @@ use IEEE.STD_LOGIC_1164.ALL;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
-entity decremento is
+entity decrem2 is
 		Port (
 			  A   : in   STD_LOGIC_VECTOR(4 DOWNTO 0);		-- Primeiro Valor
 			  
 			  S   : out  STD_LOGIC_VECTOR(4 DOWNTO 0);		-- Resultado
 			  C_o : out  STD_LOGIC;									-- Carry Out
 			  O   : out  STD_LOGIC									-- Overflow
-			);	
-end decremento;
+				);
+end decrem2;
 
-architecture Behavioral of decremento is
+architecture Behavioral of decrem2 is
 
 component somador_subtrator is
     Port ( A   : in   STD_LOGIC_VECTOR(4 DOWNTO 0);		-- Primeiro Valor
@@ -53,7 +53,8 @@ component somador_subtrator is
 end component;
 
 begin
-	
-	decrementado : somador_subtrator PORT MAP(A, "00001", '1', S, C_o, O);
+
+	dec2 : somador_subtrator PORT MAP(A, "00010", '1', S, C_o, O);
 
 end Behavioral;
+
